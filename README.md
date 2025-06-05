@@ -2,7 +2,9 @@
 
 A sleek, full-stack product management application built with the **PERN stack** (PostgreSQL, Express, React, Node.js). Designed like an e-commerce platform, it lets users add, edit, and delete products
 
-![Screenshot](./etc/anythink-screenshot.png)
+<p align="center">
+  <img src="./etc/anythink-screenshot.png" alt="screenshot" width="600" />
+</p>
 
 ---
 
