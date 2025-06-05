@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import HomePage from "./pages/HomePage";
 import ProductPage from "./pages/ProductPage";
 import { useTheme } from "./store/useThemeStore";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const { theme } = useTheme();
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/product/:id" element={<ProductPage />} />
       </Routes>
+      <Toaster />
     </div>
   );
 }

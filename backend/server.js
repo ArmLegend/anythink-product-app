@@ -21,7 +21,7 @@ app.use(
 app.use(cors());
 app.use(morgan("dev"));
 
-// app.use(apiRateLimit);
+app.use(apiRateLimit);
 
 app.use("/api/products", productRouter);
 
