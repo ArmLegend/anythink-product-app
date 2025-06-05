@@ -3,6 +3,7 @@ import { PackageIcon, PlusCircleIcon, RefreshCwIcon } from "lucide-react";
 
 import { useProductStore } from "../store/useProductStore";
 import ProductCard from "../components/ProductCard";
+import AddProductModel from "../components/AddProductModel";
 
 const HomePage = () => {
   const { products, loading, error, fetchProducts } = useProductStore();
@@ -10,7 +11,6 @@ const HomePage = () => {
     fetchProducts();
   }, [fetchProducts]);
 
-  console.log(products);
   return (
     <main className="max-w-6xl mx-auto px-4 py-8">
       <div className="flex justify-between items-center mb-8">
@@ -27,6 +27,8 @@ const HomePage = () => {
           <RefreshCwIcon className="size-5" />
         </button>
       </div>
+
+      <AddProductModel />
 
       {error && <div className="alert alert-error mb-8">{error}</div>}
 
